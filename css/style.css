@@ -169,6 +169,7 @@ a:focus {
     position: relative;
     padding: 20px 0;
     transition: .3s;
+    height: 60px;
 }
 
 .nav-bar.nav-sticky {
@@ -218,7 +219,7 @@ a:focus {
 
 @media (min-width: 992px) {
     .nav-bar {
-        padding: 20px 60px;
+        padding: 10px 70px;
     }
     
     .nav-bar.nav-sticky {
@@ -236,7 +237,7 @@ a:focus {
     
     .nav-bar a.nav-link {
         padding: 8px 15px;
-        font-size: 15px;
+        font-size: 12px;
         text-transform: uppercase;
     }
 }
@@ -263,7 +264,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 170px);
+    height: calc(100vh - 148px);
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
@@ -1059,7 +1060,7 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    padding-top: 180px;
+    padding-top: 20px;
     background: #121518;
     color: #ffffff;
 }
