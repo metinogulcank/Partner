@@ -68,7 +68,7 @@ a:focus {
 }
 .top-bar {
     position: relative;
-    height: 90px;
+    height: 120px;
     background: #000000;
 }
 
@@ -88,7 +88,8 @@ a:focus {
 
 .top-bar .logo img {
     max-width: 100%;
-    max-height: 100px;
+    max-height: 140px;
+    margin-top: -19px;
 }
 
 .top-bar .top-bar-right {
@@ -125,7 +126,7 @@ a:focus {
 
 .top-bar .social {
     display: flex;
-    height: 90px;
+    height: 120px;
     font-size: 0;
     justify-content: flex-end;
 }
@@ -314,7 +315,7 @@ a:focus {
 
 .carousel .carousel-caption p {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: 25px;
 }
 
