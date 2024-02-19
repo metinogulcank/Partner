@@ -103,4 +103,35 @@
     });
     
 })(jQuery);
+let currentIndex = 0;
+
+function showSlide(index) {
+  const photoContainer = document.getElementById('photo-container');
+  const totalSlides = photoContainer.children.length;
+
+  // Geçerli indeks sınırlar içinde tutulur
+  currentIndex = (index + totalSlides) % totalSlides;
+
+  // Fotoğrafları kaydırma işlemi
+  const offset = -currentIndex * 100 + '%';
+  photoContainer.style.transform = 'translateX(' + offset + ')';
+}
+
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+
+// Fotoğrafların yüklenmesini bekleyerek başlatma
+window.addEventListener('load', function () {
+  // İlk fotoğrafı göster
+  showSlide(currentIndex);
+
+  // Event listener'ları ekle
+  document.getElementById('nextBtn').addEventListener('click', nextSlide);
+  document.getElementById('prevBtn').addEventListener('click', prevSlide);
+});
 
